@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 10%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    background: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.hero-text p {
+    color: #777;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.release-date {
+    color: #aaa;
+    font-weight: bold;
+}
+
+.hero-image img {
+    
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    gap: 30px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.orange-bg {
+    background-color: #ff6600;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.orange-bg img {
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+}
+
+.features-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.features-text p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature h3 {
+    font-size: 14px;
+    margin: 15px 0;
+    font-weight: 900;
+}
+
+.feature p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 30px
+   
+}
+
+.icon i{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+    padding-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .hero, .gallery, .features-grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
+
+.foot p{
+    text-align: center;
+    font-size: 13px;
+    color: #777;  
+}
+
+
